@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2026-02-15",
+    "symbol": "SHOP",
+    "action": "BUY",
+    "shares": 10,
+    "price": 125.00
+  },
+  {
+    "date": "2026-01-20",
+    "symbol": "AMZN",
+    "action": "BUY",
+    "shares": 5,
+    "price": 170.00
+  }
+]

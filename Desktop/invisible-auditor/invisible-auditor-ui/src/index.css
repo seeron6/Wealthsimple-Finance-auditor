@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #000000;
+  --bg: #ffffff;
+}
+
+body {
+  background-color: var(--bg);
+  @apply antialiased;
+}
+
+/* Ensure the Horizon Canvas fills the hero container */
+.hero-container {
+  @apply relative w-full h-full bg-black overflow-hidden;
+}
+
+.hero-canvas {
+  @apply absolute top-0 left-0 w-full h-full;
+}
+
+.hero-content {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 w-full;
+}
+
+.hero-title {
+  @apply text-8xl md:text-[12rem] font-black tracking-tighter leading-none;
+}
+
+.hero-subtitle {
+  @apply mt-8 text-xl md:text-2xl font-light tracking-widest text-white/60;
+}
+
+/* Custom Scrollbar for the Terminal */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-green-900 rounded-full;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
